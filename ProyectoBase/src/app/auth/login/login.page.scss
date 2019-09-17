@@ -1,11 +1,18 @@
+ion-col{
+    --background: #15d0b3;
+}
 ion-item{
-    --background: #3880ff;
-    --color: #fff;
+    --background: #15d0b3;
+    --color: #ffffff;
 }
 ion-button{
-    --background: #062f77;
+    --background: #000000;
 }
 
 a{
     color: #fff;
+}
+
+h1{
+    font-size: 64px;
 }

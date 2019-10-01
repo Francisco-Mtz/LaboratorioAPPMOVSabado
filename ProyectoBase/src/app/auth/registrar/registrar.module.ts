@@ -8,7 +8,6 @@ import { IonicModule } from '@ionic/angular';
 import { RegistrarPage } from './registrar.page';
 import { HttpClientModule } from '@angular/common/http';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -24,7 +23,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   declarations: [RegistrarPage]
 })

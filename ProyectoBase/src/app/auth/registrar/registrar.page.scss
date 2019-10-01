@@ -1,0 +1,51 @@
+ion-item{
+    --background: #15D0B3;
+    --color: #fff;
+}
+
+ion-button{
+    --background: #fff;
+    --color: #15D0B3;
+}
+
+ion-content{
+    --background: #15D0B3;
+    --color: #fff;
+}
+
+ion-row{
+    --background: #15D0B3;
+    --color: #fff;
+}
+
+ion-item{
+    --background: #15D0B3;
+    --color: #fff;
+    --border-color: white;
+}
+
+ion-input{
+    font-family: 'Arial';
+    --placeholder-color: white; 
+    --placeholder-opacity: 100;
+
+}
+
+ion-button{
+    --background: white;
+    --opacity: 100;	
+    font-family: 'Arial';
+    font-weight: 900;
+    color: #15D0B3;
+}
+
+h3{
+    color: white;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.divButton {
+    padding-top: 40px;
+    text-align: center;
+}

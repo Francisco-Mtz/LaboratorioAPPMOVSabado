@@ -1,0 +1,50 @@
+<ion-header >
+  <ion-toolbar  color="primary">
+    <ion-title>Cuentas
+      <ion-icon name="card"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium" padding>
+    <ion-list class="ion-no-padding" >
+        <ion-item-sliding *ngFor="let cuenta of cuentas">
+          <ion-item color="medium">
+            <ion-card color="light">
+                <ion-card-header>
+                    <ion-card-title class="cardItems">{{cuenta.Nombre}}
+
+
+                    </ion-card-title>
+
+                </ion-card-header>
+                <ion-card-content class="cardItems">
+                    Tu saldo es de: $ {{cuenta.Cantidad}}
+                </ion-card-content>
+
+
+                <ion-row class="cardfooter">
+                    <ion-col>
+                        <ion-button float-left>
+                            <ion-icon name="md-create"></ion-icon>
+                        </ion-button>
+                        <ion-button float-right>
+                            <ion-icon color="dark" name="md-trash"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                  </ion-row>
+            </ion-card>
+          </ion-item>
+        </ion-item-sliding>
+      </ion-list>
+
+
+
+
+
+  <ion-fab vertical="bottom" horizontal="end"  slot="fixed">
+    <ion-fab-button (click)="AgregarCuenta()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

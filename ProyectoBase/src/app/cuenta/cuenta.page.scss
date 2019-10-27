@@ -1,0 +1,28 @@
+
+ion-button{
+    --opacity: 100;	
+    font-family: 'Nunito';
+    font-weight: 900;
+    --background: white;
+    color: #15D0B3;
+}
+
+h3{
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito';
+}
+
+.icon-bigger {
+    font-size: 100px; //Preferred size here
+}
+
+.editButton {
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+ion-card{
+    width: 100% !important;
+  }

@@ -11,7 +11,10 @@ const routes: Routes = [
   { path: 'registro', component: RegistrarPage },
   { path: 'registrar', component: RegistrarPage  },
   { path: 'login', component: LoginPage },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },  { path: 'home', loadChildren: './home/home.module#HomePageModule' }
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },
+/*{ path: 'modal-add', loadChildren: './modal-add/modal-add.module#ModalAddPageModule' },*/
+
 
 ];
 @NgModule({

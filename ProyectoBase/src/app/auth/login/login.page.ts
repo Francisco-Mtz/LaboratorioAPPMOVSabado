@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  login(){
+  login() {
     console.log(this.loginForm.valid);
     this.usuario = new Usuario();
     this.usuario.correo = this.loginForm.controls.correo.value;
@@ -39,7 +39,7 @@ export class LoginPage implements OnInit {
         this.loginCorrecto();
       },
       error => {
-        this.error(error.error.mensaje)
+        this.error(error.error.mensaje);
       }
     );
 }

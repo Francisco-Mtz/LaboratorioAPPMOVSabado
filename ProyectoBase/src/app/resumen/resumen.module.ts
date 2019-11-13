@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { ResumenPage } from './resumen.page';
 import { ChartsModule } from 'ng2-charts';
-import { Chart } from 'chart.js';
 
 const routes: Routes = [
   {
@@ -22,9 +21,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    ChartsModule,
-    ElementRef
-    //Chart
+    ChartsModule
   ],
   declarations: [ResumenPage]
 })

@@ -6,6 +6,7 @@ import { ModalController, AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { LoginService } from './loginService';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -52,7 +53,7 @@ async loginCorrecto() {
     buttons: [{
       text: 'Aceptar',
       handler: () => {
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/tabs/cuenta');
       }
     }]
   });
@@ -60,7 +61,7 @@ async loginCorrecto() {
   await alert.present();
 }
 
-async error(error: string){
+async error(error: string) {
   const alert = await this.alertController.create({
     header: 'Alert',
     subHeader: 'Error',

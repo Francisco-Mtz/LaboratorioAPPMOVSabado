@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController, AlertController } from '@ionic/angular';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CuentaPage } from '../cuenta/cuenta.page';
 
 @Component({
   selector: 'app-modal-add',
@@ -9,6 +8,7 @@ import { CuentaPage } from '../cuenta/cuenta.page';
   styleUrls: ['./modal-add.page.scss'],
 })
 export class ModalAddPage implements OnInit {
+
   addForm: FormGroup;
   submitted = false;
 

@@ -14,6 +14,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { RegistrarPage } from './auth/registrar/registrar.page';
 import { LoginPage } from './auth/login/login.page';
 
+import { ChartsModule } from 'ng2-charts';
+import { Chart } from 'chart.js';
+
 
 @NgModule({
   declarations: [ AppComponent, RegistrarPage, LoginPage],
@@ -23,7 +26,8 @@ import { LoginPage } from './auth/login/login.page';
             AppRoutingModule,
             FormsModule,
             ReactiveFormsModule,
-            HttpClientModule
+            HttpClientModule,
+            ChartsModule,
           ],
   providers: [
     StatusBar,

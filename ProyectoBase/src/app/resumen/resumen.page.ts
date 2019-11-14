@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef , AfterViewInit} from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
@@ -6,13 +6,14 @@ import { Chart } from 'chart.js';
   templateUrl: './resumen.page.html',
   styleUrls: ['./resumen.page.scss']
 })
-export class ResumenPage implements OnInit {
+export class ResumenPage implements AfterViewInit {
+  @ViewChild('doughnutCanvas', {static: false})
   // tslint:disable-next-line: max-line-length
-  @ViewChild('doughnutCanvas', {read: ElementRef}) doughnutReference: ElementRef; /*{read: ElementRef} accessing the property not on Component initialisation but after the View https://github.com/angular/angular/issues/30291*/
+  doughnutReference: ElementRef; /*{read: ElementRef} accessing the property not on Component initialisation but after the View https://github.com/angular/angular/issues/30291*/
 
   private doughnutChart: Chart;
 
-  ngOnInit() {
+  ngAfterViewInit() {
 
     this.doughnutChart = new Chart(this.doughnutReference.nativeElement, {
       type: 'doughnut',
@@ -26,20 +27,20 @@ export class ResumenPage implements OnInit {
             data: [​10​,​10​,​10​,​10​,​10​,​10​,​10​,​10​,​10​,​10​],
 
             backgroundColor: [
-              ​'rgba(255, 99, 132, 0.2)'​,
-              'rgba(54, 162, 235, 0.2)'​,
-              ​'rgba(255, 206, 86, 0.2)'​,
-              'rgba(75, 192, 192, 0.2)'​,
-              'rgba(153, 102, 255, 0.2)'​,
-              'rgba(255, 159, 64, 0.2)'​,
-              'rgba(255, 159, 64, 0.2)'​,​
-              ​'rgba(255, 159, 64, 0.2)'​,​
-              'rgba(255, 159, 64, 0.2)'​,​
-              'rgba(255, 159, 64, 0.2)'
+              ​'#FBA7A7'​,
+              '#F4CFA3'​,
+              ​'#FDF6A9'​,
+              '#EDFCA9'​,
+              '#C3ECAC'​,
+              '#A9F2D5'​,
+              '#BCFBF0'​,​
+              ​'#E0DEE1'​,​
+              '#AFE6F8'​,​
+              '#D2C6F4'
             ],
 
-            hoverBackgroundColor: ['#FF6384'​, ​'#36A2EB'​, ​'#FFCE56'​, ​'#FF6384'​, ​'#36A2EB'​,
-            '#FFCE56'​,​ ​'#FFCE56'​, ​'#FFCE56'​, '#FFCE56'​, ​'#FFCE56'​]
+            hoverBackgroundColor: ['#FF0101'​, ​'#FA8B04'​, ​'#FDF103'​, ​'#BEFE01'​, ​'#54D304'​,
+            '#13EA97'​,​ ​'#4BE4E1'​, ​'#888789'​, '#046BF3'​, ​'#8253F6'​]
           }
         ]
       }

@@ -19,11 +19,13 @@
                 <ion-input formControlName="cantidad" type="number" placeholder="Cantidad"></ion-input>
               </ion-item>
             </div>
-            <div class="divButton">
-              <ion-button (click)="salirAdd()" color="danger" size="medium">Cancelar</ion-button>
-            </div >
-            <div class="divButton">
-              <ion-button color="success" size="medium" [disabled]="addForm.invalid" type="submit">Agregar</ion-button>
+            <div class="BotonesArea">
+                <div class="divButton">
+                    <ion-button (click)="salirAdd()" color="danger" size="medium">Cancelar</ion-button>
+                  </div >
+                  <div class="divButton">
+                    <ion-button color="success" size="medium" [disabled]="addForm.invalid" type="submit">Agregar</ion-button>
+                  </div>
             </div>
           </ion-col>
         </ion-row>
